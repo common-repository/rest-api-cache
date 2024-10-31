@@ -1,0 +1,179 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+.accordianheading{
+	cursor:pointer;
+	margin-bottom:5px!important;
+	font-weight:bold;
+	font-size: 14px;
+	padding: 8px 12px;
+	margin: 0;
+	line-height: 1.4;
+	border:1px solid #c3c3c3;
+	position:relative;
+	background: #C0C0C0;
+
+}
+.accordianheading .dashicons {
+	float:right;
+	}
+.endpoints_list,
+.ac_post_type_list {
+	padding:15px 0;
+	overflow: hidden;
+	}
+.endpoints_list {
+	background:#fff;
+}
+.endpoints_list .col-sm-3,
+.ac_post_type_list .col-sm-3 {
+	float:left;
+	width:25%;
+	box-sizing:border-box;
+	padding:3px 15px;
+	}
+
+/* advanced api cache */
+.wrap-div::after{
+	content: '';
+	clear: both;
+	display: block;
+}
+.wrap-div{
+	margin: 0 -15px;
+}
+.cache-time-setting ,.purge-cache {
+	width: 50%;
+	box-sizing: border-box;
+	float: left;
+	padding:15px;
+}
+.purge-cache {
+	border-right:1px solid #c3c3c3;
+}
+.cache-time-setting select{
+	height: 34px;
+}
+.purge-cache p.p-min{
+	min-height: 73px;
+}
+
+
+ /* Tooltip container */
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+
+    /* Fade in tooltip */
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+/* Tooltip arrow */
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+/*purge setting*/
+.ad_rest_purge_cache::after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.ad_rest_purge_cache{
+	margin: 0 -15px;
+}
+.ad_rest_purge_cache .col-6{
+	width: 50%;
+	float: left;
+	margin-bottom: 15px;
+	padding: 0 15px;
+	box-sizing: border-box;
+}
+.ad_rest_purge_cache .border{
+	border-bottom: 1px solid rgba(0,0,0,0.2);
+	padding-bottom: 15px;
+}
+.ad_rest_purge_cache .col-6:nth-child(2n+1){
+	clear: both;
+}
+.ad_rest_purge_cache .col-4,.ad_rest_purge_cache .col-8{
+	display: inline-block;
+	vertical-align: middle;
+}
+.ad_rest_purge_cache .col-4{
+	width: 34%;
+	padding-right: 5px;
+}
+.ad_rest_purge_cache .col-8{
+	width: 64%;
+}
+.ad_rest_purge_cache .fs-wrap,.ad_rest_purge_cache .fs-dropdown{
+	width: 300px;
+}
+.ad_rest_purge_cache{
+	position: relative;
+	overflow: visible;
+}
+.ad_rest_purge_cache::before{
+	content: '';
+	position: absolute;
+	width: 1px;
+	background-color: rgba(0, 0, 0, 0.2);
+	top: 15px;
+	bottom: 30px;
+	left: 50%;
+}
+
+@media only screen and (max-width: 1200px) {
+.endpoints_list .col-sm-3,
+.ac_post_type_list .col-sm-3 {
+	width:33%;
+	}
+}
+@media only screen and (max-width: 980px) {
+.endpoints_list .col-sm-3,
+.ac_post_type_list .col-sm-3 {
+	width:50%;
+	}
+}
+@media only screen and (max-width: 560px) {
+.endpoints_list .col-sm-3,
+.ac_post_type_list .col-sm-3 {
+	width:100%;
+	}
+}
